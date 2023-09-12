@@ -1,5 +1,5 @@
 :root {
-	--background-color: white;
+	
 	--purple-100: #fff7c2;
 	--purple-300: #ffe066;
 	--purple-600: #c980f2;
@@ -13,23 +13,6 @@
 			transparent 360deg);
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-
-		/* Background */
-		--background-color: var(#21252b);
-
-	}
-
-	html {
-		color-scheme: dark;
-		background-color: var(--background-color);
-	}
-}
-
-[data-theme="dark"] {
-	--background-color: var(#21252b);
-}
 
 /* Use a more-intuitive box-sizing model. */
 *,
