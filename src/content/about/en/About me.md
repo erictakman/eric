@@ -8,7 +8,7 @@ author: Eric Takman
 title: Who's Eric? 🤨
 ---
 
-<div class="max-h-80 max-w-80 pb-2 place-self-center">
+<div class="h-80 max-w-80 pb-2 place-self-center">
 	<img 
 		src="/images/eric.png" 
 		alt="Eric Takman" 
