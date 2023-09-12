@@ -10,8 +10,8 @@ description: Malmö University Student Magazine
 displayDate: "September 2017 - Mars 2018"
 ---
 
-<div class="object-contain h-80">
-	<img src="/images/sum.png" alt="Unpacking SUM Magazine" style="border-radius: 1rem; max-height: 100%;">
+<div class="h-56 w-full pb-2">
+	<img src="/images/sum.png" alt="Packar upp SUM Magazine" class="object-none h-full w-fit rounded-xl">
 </div>
 
 <br />

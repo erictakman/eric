@@ -7,8 +7,13 @@ author: Eric Takman
 
 title: Who's Eric? 🤨
 ---
-<div class="object-contain h-80">
-	<img src="/images/eric.png" alt="Eric Takman" style="border-radius: 1rem; max-height: 100%;">
+
+<div class="max-h-80 max-w-80 pb-2 place-self-center">
+	<img 
+		src="/images/eric.png" 
+		alt="Eric Takman" 
+		class="object-none h-full w-fit rounded-xl"
+	>
 </div>
 
 <br />
