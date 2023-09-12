@@ -8,8 +8,12 @@ author: Eric Takman
 title: Vem är Eric? 🤨
 ---
 
-<div class="h-56 w-full pb-2">
-	<img src="/images/eric.png" alt="Eric Takman" class="object-none h-full w-fit rounded-xl">
+<div class="h-80 max-w-80 pb-2 place-self-center">
+	<img 
+		src="/images/eric.png" 
+		alt="Eric Takman" 
+		class="object-none h-full w-fit rounded-xl"
+	>
 </div>
 
 <br />
