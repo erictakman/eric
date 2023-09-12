@@ -1,0 +1,48 @@
+---
+import LangIcon from '../assets/icons/LangIcon.astro';
+import { getLangFromUrl } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const fullPath = Astro.url.pathname.split("/")
+const currentPath = fullPath[fullPath.length - 1]
+
+
+---
+
+<a href={`/${lang === 'en' ? 'sv' : 'en'}/${currentPath !== 'en' && currentPath !== 'sv' ? currentPath : ''}`}>
+  <LangIcon class="icon lang" />
+  <span class={(lang === 'sv' ? 'font-semibold text-blue-500 dark:text-blue-300' : '') + ' pr-2'}>sv</span>
+  |
+  <span class={(lang === 'en' ? 'font-semibold text-blue-500 dark:text-blue-300' : '') + ' pl-2'}>en</span>
+</a>
+
+<style lang="postcss">
+  a {
+    @apply
+      flex
+      w-fit
+      pr-3
+      items-center
+      rounded-xl
+			border
+			border-transparent
+			transition-colors
+			hover:border-sten-200
+			hover:bg-sten-50
+			dark:hover:border-sten-600
+			dark:hover:bg-sten-900;
+  }
+
+  .lang {
+		@apply
+			stroke-sten-500
+			dark:stroke-sten-100;
+	}
+
+  .icon {
+		@apply
+			w-9
+			h-9
+      p-2
+	}
+</style>

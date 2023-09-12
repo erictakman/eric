@@ -1,0 +1,70 @@
+---
+import MenuIcon from "../assets/icons/MenuIcon.astro";
+import MoonIcon from "../assets/icons/MoonIcon.astro";
+import SunIcon from "../assets/icons/SunIcon.astro";
+
+import LanguagePicker from '../components/LanguagePicker.astro';
+---
+
+<div class="settings">
+	<div class="flex items-center gap-2">
+		<button id="themeLight"><SunIcon class="icon sun" /></button>
+		<button id="themeDark"><MoonIcon class="icon moon" /></button>
+		<LanguagePicker />
+	</div>
+	<button class="smallscreen" id="toggle"><MenuIcon class="icon lang" /></button>
+</div>
+
+<style lang="postcss">
+	.settings {
+		@apply
+			flex
+			justify-between
+			items-center
+			p-2;
+	}
+
+	.sun {
+		@apply
+			stroke-citron-600 
+			dark:stroke-sten-100;
+	}
+
+	.moon {
+		@apply
+			stroke-sten-500 
+			dark:stroke-blue-400;
+	}
+
+	.lang {
+		@apply
+			stroke-sten-500
+			dark:stroke-sten-100;
+	}
+
+	.icon {
+		@apply
+			w-9
+			h-9
+			p-2
+			rounded-xl
+			border
+			border-transparent
+			transition-colors
+			hover:border-sten-200
+			hover:bg-sten-50
+			dark:hover:border-sten-600
+			dark:hover:bg-sten-900;
+	}
+
+	.smallscreen {
+		@apply
+			block
+			md:hidden;
+	}
+</style>
+
+<script>
+	import '../scripts/themeToggle.js'
+	import '../scripts/menuToggle.js'
+</script>

@@ -1,0 +1,71 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Menu from "../components/Menu.astro";
+import BackButton from "../components/BackButton.astro";
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+export interface Props {
+	topic?: 'nav.about' | 'nav.news' | 'nav.education' | 'nav.work' | 'nav.projects';
+	page: "home" | "topic";
+}
+
+const { topic, page } = Astro.props;
+
+const topicFormatted =
+	page === "topic"
+		? t(topic)
+		: "Portfolio";
+const header = page === "topic" ? topicFormatted : "Eric Takman";
+
+const title = `Eric Takman - ${topicFormatted}`;
+---
+
+<Layout title={title}>
+	<Menu active={topic} />
+	<section class="section">
+		<h1 class="h1">{header}</h1>
+		<slot />
+	</section>
+	{page === "topic" && <BackButton />}
+</Layout>
+
+<style lang="postcss">
+
+	.section {
+		@apply 
+			max-md:w-auto
+			mt-12
+			max-w-2xl
+			col-start-3
+			col-end-4
+			flex 
+			flex-col 
+			items-start
+			max-md:items-center
+			justify-start
+			gap-6
+			py-10;
+	}
+
+	.h1 {
+		@apply 
+			text-4xl 
+			max-md:mt-20
+			font-bold 
+			mb-10
+			text-transparent
+			bg-clip-text
+			bg-gradient-to-b
+			leading-normal
+			from-sten-700
+			via-sten-900
+			to-sten-950
+			dark:from-white
+			dark:via-sten-50
+			dark:to-sten-200;
+	}
+
+</style>

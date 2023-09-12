@@ -1,0 +1,149 @@
+---
+import BeakerIcon from "../assets/icons/BeakerIcon.astro";
+import FaceIcon from "../assets/icons/WaveIcon.astro";
+import NewsPaperIcon from "../assets/icons/NewsPaperIcon.astro";
+import StudentIcon from "../assets/icons/StudentIcon.astro";
+import WorkIcon from "../assets/icons/WorkIcon.astro";
+import Settings from "./Settings.astro";
+
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+export interface Props {
+	active?: string;
+}
+
+const setActive = (link: string) => {
+	if (Astro.url.pathname.includes(link)) {
+		return "selected-link";
+	} else {
+		return "post-link";
+	}
+};
+---
+
+<aside class="menu">
+	<Settings />
+	<div id="menu" class="unexpanded">
+		<p class="menu-header">{t('category')}</p>
+		<a href=`/${lang}/news` class={setActive("news")}>
+			<NewsPaperIcon class="icon stroke-fuchsia-400 dark:stroke-fuchsia-300" />
+			{t('nav.news')}
+		</a>
+		<a href=`/${lang}/about` class={setActive("about")}>
+			<FaceIcon class="icon stroke-rose-400 dark:stroke-rose-300" />
+			{t('nav.about')}
+		</a>
+		<a href=`/${lang}/work` class={setActive("work")}>
+			<WorkIcon class="icon stroke-blue-500 dark:stroke-blue-300" />
+			{t('nav.work')}
+		</a>
+		<a href=`/${lang}/education` class={setActive("education")}>
+			<StudentIcon class="icon stroke-orange-400 dark:stroke-orange-300" />
+			{t('nav.education')}
+		</a>
+		<a href=`/${lang}/projects` class={setActive("projects")}>
+			<BeakerIcon class="icon stroke-indigo-400 dark:stroke-indigo-300" />
+			{t('nav.projects')}
+		</a>
+	</div>
+</aside>
+
+<style lang="postcss">
+	.menu {
+		@apply
+			max-md:fixed
+			max-md:z-10
+			max-md:w-full
+			max-md:shadow-md
+			max-md:top-0
+			max-md:rounded-none
+			max-md:mt-0
+			max-md:mb-0
+			col-start-2
+			col-end-3
+			flex 
+			flex-col
+			h-min
+			justify-start
+			transition-colors
+			sticky
+			top-10
+			mt-52
+			mb-10
+			gap-2
+			p-6
+			rounded-xl
+			bg-white
+			dark:bg-sten-950
+			max-md:border-none
+			border
+			border-sten-200
+			dark:border-sten-600
+			shadow-md
+			shadow-sten-100
+			dark:shadow-neutral-900;
+	}
+
+	.unexpanded {
+		@apply
+			max-md:hidden
+	}
+
+	.menu-header {
+		@apply
+			w-min
+			font-semibold
+			mb-2
+			pl-4;
+	}
+
+	.selected-link {
+		@apply 
+			mt-2
+			flex
+			items-center
+			justify-start
+			w-full
+			py-4
+			px-4
+			gap-4
+			rounded-xl
+			font-medium
+			transition-colors
+			border
+			border-sten-200
+			dark:border-sten-600
+			bg-sten-50
+			dark:bg-sten-900
+			hover:bg-sten-50
+			dark:hover:bg-sten-900
+			hover:border-sten-200
+			dark:hover:border-sten-600;
+	}
+
+	.post-link {
+		@apply
+			mt-2
+			flex
+			items-center
+			justify-start
+			w-full
+			py-4
+			px-4
+			gap-4
+			rounded-xl
+			font-medium
+			transition-colors
+			border
+			border-transparent
+			bg-white
+			dark:bg-sten-950
+			hover:bg-sten-50
+			dark:hover:bg-sten-900
+			hover:border-sten-200
+			dark:hover:border-sten-600;
+	}
+
+</style>

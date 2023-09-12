@@ -1,0 +1,50 @@
+---
+import ArrowLeftIcon from "../assets/icons/ArrowLeftIcon.astro"
+
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+---
+
+<a class="back-button" href=`../${lang}`>
+	<ArrowLeftIcon class="stroke-sten-500 dark:stroke-sten-100" />
+	<p>{t('back')}</p>
+</a>
+
+<style lang="postcss">
+	.back-button {
+		@apply 
+			max-md:fixed
+			max-md:bottom-6
+			max-md:right-6
+			max-md:shadow-md
+			md:top-10
+			sticky
+			mt-52
+			h-10
+			px-4
+			gap-2
+			col-start-4
+			col-end-5
+			flex
+			items-center
+			justify-center
+			rounded-xl
+			border
+			transition-colors
+			bg-white
+			dark:bg-sten-950
+			border-sten-200
+			dark:border-sten-600
+			hover:bg-sten-50
+			dark:hover:bg-sten-900
+			hover:border-sten-200
+			dark:hover:border-sten-600;
+	}
+
+	p {
+		@apply
+			w-full;
+	}
+</style>

@@ -1,0 +1,11 @@
+---
+import PageLayout from "../../layouts/PageLayout.astro";
+
+const posts = await Astro.glob("./../../content/about/en/**/*.md");
+posts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
+---
+
+<PageLayout topic="nav.about" page="topic">
+	{posts.map((post) => <post.Content />)}
+</PageLayout>
+	

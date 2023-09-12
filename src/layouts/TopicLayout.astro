@@ -1,0 +1,90 @@
+---
+import PostButton from "../components/PostButton.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<div class="box">
+	<div>
+		<span class="header">
+			<h1 class="title">{frontmatter.title}</h1>
+			<PostButton topic={frontmatter.topic} />
+		</span>
+		<p class="description">
+			{frontmatter.displayDate}
+		</p>
+		<p class="description">{frontmatter.description}</p>
+	</div>
+	<article class="article">
+		<slot />
+	</article>
+</div>
+
+<style is:global lang="postcss">
+
+	.box {
+		@apply
+			max-md:max-w-xl
+			min-w-full
+			px-10
+			py-8
+			border
+			bg-white
+			dark:bg-sten-950
+			border-sten-200
+			dark:border-sten-700
+			rounded-xl
+			flex
+			flex-col
+			gap-6
+			relative;
+	}
+
+	.header {
+		@apply
+			flex
+			items-center
+			justify-between
+			text-sten-700
+			dark:text-white
+			gap-4;
+	}
+
+	.title {
+		@apply
+			text-2xl
+			font-semibold;
+	}
+
+	.description {
+		@apply
+			text-xs
+			font-medium
+			text-sten-400
+			dark:text-sten-300;
+	}
+	
+	.article {
+		@apply
+			prose-h1:text-sten-700
+			prose-h1:dark:text-white
+			prose-h1:font-semibold
+			prose-h2:text-sten-600
+			prose-h2:dark:text-sten-50
+			prose-h2:font-medium
+			prose-h3:text-sten-500
+			prose-h3:dark:text-sten-100
+			prose-a:text-blue-500
+			prose-a:dark:text-blue-400
+			prose-a:underline
+			prose-a:underline-offset-4
+			prose-a:decoration-2
+			prose-p:text-sm
+			flex
+			flex-col
+			gap-2
+			text-sten-400
+			dark:text-sten-300;
+	}
+
+</style>

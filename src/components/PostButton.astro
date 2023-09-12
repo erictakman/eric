@@ -1,0 +1,49 @@
+---
+import BeakerIcon from "../assets/icons/BeakerIcon.astro";
+import FaceIcon from "../assets/icons/WaveIcon.astro";
+import NewsPaperIcon from "../assets/icons/NewsPaperIcon.astro";
+import StudentIcon from "../assets/icons/StudentIcon.astro";
+import WorkIcon from "../assets/icons/WorkIcon.astro";
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+export interface Props {
+	topic: string;
+}
+
+const { topic } = Astro.props;
+
+---
+
+<a href=`/${lang}/${topic}` class="icon-button">
+	{topic === "news" && <NewsPaperIcon class="stroke-fuchsia-400 dark:stroke-fuchsia-300" />}
+	{topic === "about" && <FaceIcon class="stroke-rose-400 dark:stroke-rose-300" />}
+	{topic === "work" && <WorkIcon class="stroke-blue-500 dark:stroke-blue-300" />}
+	{topic === "education" && <StudentIcon class="stroke-orange-400 dark:stroke-orange-300" />}
+	{topic === "projects" && <BeakerIcon class="stroke-indigo-400 dark:stroke-indigo-300" />}
+</a>
+
+<style lang="postcss">
+	.icon-button {
+		@apply
+			w-10
+			h-10
+			p-2
+			flex
+			items-center
+			justify-center
+			rounded-xl
+			border
+			transition-colors
+			bg-white
+			dark:bg-sten-950
+			border-sten-200
+			dark:border-sten-600
+			hover:bg-sten-50
+			dark:hover:bg-sten-900
+			hover:border-sten-200
+			dark:hover:border-sten-600;
+	}
+</style>

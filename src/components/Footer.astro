@@ -1,0 +1,54 @@
+---
+import LinkedInIcon from "../assets/icons/LinkedInIcon.astro";
+import GitHubIcon from "../assets/icons/GitHubIcon.astro";
+import MailIcon from "../assets/icons/MailIcon.astro";
+import PhoneIcon from "../assets/icons/PhoneIcon.astro";
+
+---
+
+<section class="content">
+	<h2 class="h2">Eric Takman</h2>
+	<a class="a" href="mailto:eric@takman.se"><MailIcon class="icon" />eric@takman.se</a>
+	<a class="a" href="tel:+46707874613"><PhoneIcon class="icon" />+46 070 787 46 13</a>
+	<a class="a" href="https://github.com/erictakman"><GitHubIcon class="icon" />erictakman</a>
+	<a class="a" href="https://www.linkedin.com/in/eric-takman-59a641a3/"><LinkedInIcon class="icon" />Eric Takman</a>
+</section>
+
+<style lang="postcss">
+
+	.content {
+		@apply
+			col-start-2
+			col-end-3
+			flex
+			flex-col
+			gap-4;
+	}
+
+	.h2 {
+		@apply
+			text-2xl
+			font-bold;
+	}
+
+	.a {
+		@apply
+			w-fit
+			flex
+			items-center
+			gap-2
+			text-blue-500
+			dark:text-blue-300
+			underline-offset-4
+			hover:underline;
+	}
+
+	.icon {
+		@apply
+			stroke-sten-500
+			dark:stroke-sten-100
+			h-5
+			w-5;
+	}
+
+</style>
