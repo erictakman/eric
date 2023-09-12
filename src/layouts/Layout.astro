@@ -34,16 +34,24 @@ const lang = getLangFromUrl(Astro.url);
 
 <style is:global lang="postcss">
 
+	html {
+		@apply
+			h-screen
+			w-screen
+			bg-white
+			dark:bg-sten-950
+	}
+
 	body {
 		@apply
+			h-screen
+			w-screen
 			text-sten-500
 			dark:text-white
 			bg-white
 			dark:bg-sten-950
 			transition-colors
 			overflow-x-hidden;
-
-		background-color: var(--neutral-light);
 	}
 
 	.main {
@@ -75,11 +83,13 @@ const lang = getLangFromUrl(Astro.url);
 
 	.footer {
 		@apply
+			absolute
 			flex
 			justify-center
 			items-center
 			h-80
 			w-full
-			gap-6;
+			gap-6
+			z-10;
 	}
 </style>
