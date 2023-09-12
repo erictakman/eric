@@ -2,7 +2,7 @@
 layout: ../../../layouts/TopicLayout.astro
 topic: work
 
-date: 2023-09-12
+date: 2023-09-04
 author: Eric Takman
 
 title: AG arkitekter AB

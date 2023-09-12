@@ -2,7 +2,7 @@
 layout: ../../../layouts/TopicLayout.astro
 topic: work
 
-date: 2023-09-12
+date: 2023-09-02
 author: Eric Takman
 
 title: SUM Magazine
@@ -15,7 +15,6 @@ displayDate: "September 2017 - Mars 2018"
 </div>
 
 <br />
-<div class="pt-4"></div>
 
 # Editor-in-Chief at Malmö University Student Magazine ✍
 

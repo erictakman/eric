@@ -2,12 +2,12 @@
 layout: ../../../layouts/TopicLayout.astro
 topic: education
 
-date: 2023-09-12
+date: 2023-09-10
 author: Eric Takman
 
-title: Systemvetenskap
+title: Computer Science
 description: Uppsala university
-displayDate: "November 2022 - April 2023"
+displayDate: "August 2020 - June 2023"
 ---
 
 # Computer Science Program with a Focus on Software Engineering

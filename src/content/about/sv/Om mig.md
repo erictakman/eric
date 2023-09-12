@@ -14,8 +14,6 @@ title: Vem är Eric? 🤨
 
 <br />
 
-<div class="pt-4"></div>
-
 # Hej 👋
 
 Jag är en strukturerad, analytisk och kommunikativ systemutvecklare som gärna är delaktig i hela utvecklingsprocessen. Min ambition är att jobba gränsöverskridande som fullstack-utvecklare och jag trivs med att jobba i team där jag kan bidra med mina kunskaper och erfarenheter. Jag har en bakgrund inom kommunikation och har jobbat som kommunikatör på ett arkitektkontor i Stockholm innan jag valde att byta spår och utbilda mig till systemutvecklare. Folk som jag har jobbat med har beskrivit mig som en engagerad och nyfiken medarbetare som är bra på kreativ problemlösning och analys. Det finns inga problem jag inte vill lösa, och jag är en person som drivs av att ständigt lära mig nya saker i det jag gör.

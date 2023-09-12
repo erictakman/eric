@@ -13,7 +13,6 @@
 			transparent 360deg);
 }
 
-
 @media (prefers-color-scheme: dark) {
 	:root {
 
@@ -24,6 +23,7 @@
 
 	html {
 		color-scheme: dark;
+		background-color: var(--background-color);
 	}
 }
 

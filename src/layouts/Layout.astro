@@ -34,8 +34,6 @@ const lang = getLangFromUrl(Astro.url);
 
 <style is:global lang="postcss">
 
-	
-
 	body {
 		@apply
 			text-sten-500
@@ -60,19 +58,6 @@ const lang = getLangFromUrl(Astro.url);
 			gap-6;
 	}
 
-	.noise {
-  height: 100%;
-  background: linear-gradient(20deg, rebeccapurple, transparent), url(https://grainy-gradients.vercel.app/noise.svg);   
-  filter: contrast(170%) brightness(1000%);
-}
-
-/* Chrome-specific */
-@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
-  .noise {
-    filter: contrast(290%) brightness(1000%);
-  }
-}
-
 	.main::before {
 		background: var(--neutral-glow);
 		border-radius: 50%;
@@ -81,7 +66,7 @@ const lang = getLangFromUrl(Astro.url);
 		margin-left: -400px;
 		content: '';
 		top: 40%;
-		left: 50%;
+		left: 60%;
 		position: absolute;
 		filter: blur(80px);
 		transform: translateZ(0);

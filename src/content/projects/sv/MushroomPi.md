@@ -2,7 +2,7 @@
 layout: ../../../layouts/TopicLayout.astro
 topic: projects
 
-date: 2023-09-12
+date: 2023-09-05
 author: Eric Takman
 
 title: MushroomPi

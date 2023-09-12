@@ -2,12 +2,12 @@
 layout: ../../../layouts/TopicLayout.astro
 topic: education
 
-date: 2023-09-12
+date: 2023-09-10
 author: Eric Takman
 
 title: Systemvetenskap
 description: Uppsala universitet
-displayDate: "November 2022 - April 2023"
+displayDate: "Augusti 2020 - Juni 2023"
 ---
 
 # Systemvetarprogrammet med inriktning mot programvaruteknik

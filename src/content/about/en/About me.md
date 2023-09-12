@@ -13,8 +13,6 @@ title: Who's Eric? 🤨
 
 <br />
 
-<div class="pt-4"></div>
-
 # Hello 👋
 
 I am a structured, analytical, and communicative system developer who enjoys being involved in the entire development process. My ambition is to work cross-functionally as a full-stack developer, and I thrive in teams where I can contribute my knowledge and experience. I have a background in communication and worked as a communicator at an architectural firm in Stockholm before I chose to change my path and train to become a system developer. People I have worked with have described me as a committed and curious colleague who is good at creative problem-solving and analysis. There are no problems I don't want to solve, and I am a person driven by constantly learning new things in what I do.

@@ -18,11 +18,11 @@ const { topic } = Astro.props;
 ---
 
 <a href=`/${lang}/${topic}` class="icon-button">
-	{topic === "news" && <NewsPaperIcon class="stroke-fuchsia-400 dark:stroke-fuchsia-300" />}
-	{topic === "about" && <FaceIcon class="stroke-rose-400 dark:stroke-rose-300" />}
-	{topic === "work" && <WorkIcon class="stroke-blue-500 dark:stroke-blue-300" />}
-	{topic === "education" && <StudentIcon class="stroke-orange-400 dark:stroke-orange-300" />}
-	{topic === "projects" && <BeakerIcon class="stroke-indigo-400 dark:stroke-indigo-300" />}
+	{topic === "news" && <NewsPaperIcon class="min-w-max stroke-fuchsia-400 dark:stroke-fuchsia-300" />}
+	{topic === "about" && <FaceIcon class="min-w-max stroke-rose-400 dark:stroke-rose-300" />}
+	{topic === "work" && <WorkIcon class="min-w-max stroke-blue-500 dark:stroke-blue-300" />}
+	{topic === "education" && <StudentIcon class="min-w-max stroke-orange-400 dark:stroke-orange-300" />}
+	{topic === "projects" && <BeakerIcon class="min-w-max stroke-indigo-400 dark:stroke-indigo-300" />}
 </a>
 
 <style lang="postcss">

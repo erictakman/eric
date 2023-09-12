@@ -2,7 +2,7 @@
 layout: ../../../layouts/TopicLayout.astro
 topic: education
 
-date: 2023-09-11
+date: 2023-09-03
 author: Eric Takman
 
 title: Architecture, Visualization, and Communication
