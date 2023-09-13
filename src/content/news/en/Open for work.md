@@ -2,7 +2,7 @@
 layout: ../../../layouts/TopicLayout.astro
 topic: news
 
-date: 2023-09-11
+date: 2023-09-12
 author: Eric Takman
 
 title: Open for work!

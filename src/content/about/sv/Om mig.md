@@ -2,7 +2,7 @@
 layout: ../../../layouts/TopicLayout.astro
 topic: about
 
-date: 2023-09-12
+date: 2023-09-11
 author: Eric Takman
 
 title: Vem är Eric? 🤨
