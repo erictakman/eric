@@ -18,7 +18,7 @@ displayDate: "September 2017 - Mars 2018"
 
 # Chefredaktör på Malmö Universitets studenttidning ✍
 
-Tillsammans med en klasskamrat axlade jag rollen som chefredaktör på Malmös universitetstidning SUM Magazine. Tidningen har funnits med ett bra tag och hette tidigare Mahskara. I och med att 'h' i namnet innebar högskola, och skolan under vår tid som chefredaktörer skulle bli universitet, valde vi att uppdatera namnet på tidingen och döpte den till SUM (Student Union Magazine). Chefredaktör vid tidningen innebar allt från att rekrytera skribenter, illustratörer och fotografer, sätta upp kommunkationskanal i Slack, designa tidningen och göra repotage. Vi släppte under vår tid fyra tidningar, en under varje kvartal, innan vi lämnade över till nästa gäng med chefredaktörer och stdudenter som vill vara med och skapa universitetets egna tidning.
+Tillsammans med en klasskamrat axlade jag rollen som chefredaktör på Malmös universitetstidning SUM Magazine. Tidningen har funnits med ett bra tag och hette tidigare Mahskara. I och med att 'h' i namnet innebar högskola, och skolan under vår tid som chefredaktörer skulle bli universitet, valde vi att uppdatera namnet på tidningen och döpte den till SUM (Student Union Magazine). Chefredaktör vid tidningen innebar allt från att rekrytera skribenter, illustratörer och fotografer, sätta upp kommunkationskanal i Slack, designa tidningen och göra reportage. Vi släppte under vår tid fyra tidningar, en under varje kvartal, innan vi lämnade över till nästa gäng med chefredaktörer och studenter som vill vara med och skapa universitetets egna tidning.
 
 <div class="pt-2"></div>
 
