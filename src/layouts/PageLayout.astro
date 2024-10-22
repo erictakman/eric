@@ -8,7 +8,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 export interface Props {
-	topic?: 'nav.about' | 'nav.news' | 'nav.education' | 'nav.work' | 'nav.projects';
+	topic?: 'nav.about' | 'nav.education' | 'nav.work' | 'nav.projects';
 	page: "home" | "topic";
 }
 
